@@ -4,7 +4,9 @@
             12312312312
             <i class="header-down el-icon-arrow-down"></i>
         </div>
-        <div class="header-search"><i class="el-icon-search"></i><input class="header-search-input" placeholder="搜索饿了么商家、商品名称" type="text" /></div>
+        <div class="header-search">
+            <router-link to="/" class="header-search-input"><i class="el-icon-search"></i><span>搜索饿了么商家、商品名称</span></router-link>
+        </div>
     </div>
 </template>
 
@@ -41,7 +43,12 @@ export default {
     align-content: center;
 }
 .header-search-input {
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    border: #fff solid 1px;
+    background-color: #fff;
     margin-bottom: 10px;
+}
+.header-search-input span{
+    color: #ffa;
 }
 </style>
