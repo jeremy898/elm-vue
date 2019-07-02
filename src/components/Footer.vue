@@ -26,10 +26,12 @@ export default {
     z-index: 9999;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    font-size: 12px;
+    font-size: 0.24rem;
     color: #8e8e93;
     box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);
+}
+.footer-item {
+    margin: 0.2rem 0.4rem 0.2rem 0.4rem;
 }
 .footer-item:hover {
     color: #0089dc;
@@ -37,7 +39,7 @@ export default {
 .item-icon{
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
-    font-size: 20px;
+    margin-bottom: 0.1rem;
+    font-size: 0.4rem;
 }
 </style>

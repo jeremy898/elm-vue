@@ -5,7 +5,10 @@
             <i class="header-down el-icon-arrow-down"></i>
         </div>
         <div class="header-search">
-            <router-link to="/" class="header-search-input"><i class="el-icon-search"></i><span>搜索饿了么商家、商品名称</span></router-link>
+            <div class="content">
+                <i class="el-icon-search"></i>
+                <span>搜索饿了么商家、商品名称</span>
+            </div>
         </div>
     </div>
 </template>
@@ -16,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .header {
     position: fixed;
     left: 0;
@@ -24,7 +27,6 @@ export default {
     top: 0;
     z-index: 9999;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     flex-direction: column;
     background:linear-gradient(left ,#0af,#0089dc)
@@ -32,23 +34,31 @@ export default {
 .header-address {
     color: #fff;
     display: flex;
-    font-size: 20px;
-    margin: 20px 0 10px 0;
+    font-size: 0.4rem;
+    margin: 0.4rem  0.4rem 0.1rem 0.4rem;
     justify-content: flex-start;
 }
 .header-down {
-    font-size: 10px;
+    font-size: 0.2rem;
     display: flex;
     justify-content: flex-start;
-    align-content: center;
+    align-items: center;
+    margin-left: 0.2rem;
 }
-.header-search-input {
-    padding: 10px 20px 10px 20px;
+.header-search {
+    width: 100%;
+    height: 1rem;
+    box-sizing: border-box;
+}
+.header-search>div{
+    margin: 0.1rem 0.4rem 0.1rem 0.4rem;
+    font-size: 0.35rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
     border: #fff solid 1px;
     background-color: #fff;
-    margin-bottom: 10px;
 }
 .header-search-input span{
-    color: #ffa;
+    font-size: 0.4rem;
+    color: #999;
 }
 </style>
