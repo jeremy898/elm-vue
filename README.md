@@ -1,6 +1,6 @@
-# elm-vue
+# vue-app
 
-> A Vue.js project
+> appNews
 
 ## Build Setup
 
