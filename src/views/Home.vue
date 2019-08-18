@@ -12,23 +12,26 @@
     </div>
     <!-- swipe food -->
 
-    <ul class="swipe">
+    <ul class="swipe clearFix">
         <li class="swipe-detail" v-for="item in 10" :key="item">
-            <a href="#"><img alt="xx" style="max-width:100%" src="http://iph.href.lu/50x50"><span>{{item}}</span></a>
+            <a href="#">
+                <div style="position: relative;margin: 0 auto;width: 1.2rem;height: 1.2rem;"><img alt="xx" style="max-width:100%;max-height: 100%;" src="http://iph.href.lu/45x45"></div>
+                <span>美食</span>
+            </a>
         </li>
     </ul>
     <!-- swipe food -->
 
     <!-- Advertisement  -->
-    <div style="border: 1px solid #000;height: 1rem; margin: 0 .5rem;border-radius: 3px;font-size: 13px;">广告位置</div>
+    <div class="shoplist-title" >推荐商家</div>
     <!-- Advertisement  -->
 
     <!-- order by -->
-    <div class="box1" style="display: flex;justify-content: space-around;font-size:20px;margin-top: .2rem">
+    <div class="box1" style="display: flex;justify-content: space-around;font-size:20px;margin: .2rem">
         <div class="content"><a href="#"><span>综合排序</span></a></div>
         <div class="content"><a href="#"><span>距离最近</span></a></div>
         <div class="content"><a href="#"><span>品质联盟</span></a></div>
-        <div class="content"><a href="#"><span>筛选</span></a></div>
+        <div class="content"><a href="#"><span>筛选</span><i class="el-icon-s-open"></i></a></div>
     </div>
     <!-- order by -->
     
@@ -39,17 +42,16 @@
         </ul>
     </section>
     <section v-else class="noresult">
-        <img src="//fuss10.elemecdn.com/d/60/70008646170d1f654e926a2aaa3afpng.png">
+        <el-image src='//fuss10.elemecdn.com/d/60/70008646170d1f654e926a2aaa3afpng.png'></el-image>
         <h4>没有结果</h4>
         <p>登录后查看更多商家</p>
-        <button>登录</button>
+          <el-button type="success" plain>登录</el-button>
     </section>
     <!-- shopList -->
-
-    <div style="height:1200px;margin-bottom: 1rem"></div>
+    <!-- <div style="height:1200px;margin-bottom: 1rem"></div> -->
     <!-- nav -->
-    <footer class="footer">
-        <div style="display: flex;justify-content: space-around;align-items: center;">
+    <footer style="height:2rem">
+        <div class="footer" style="display: flex;justify-content: space-around;align-items: center;">
             <router-link :to="{ path: '/'}" class="flex-wrap" click="cuurentNav('home')" :style="{color: navName === 'home' ? '#0089dc' : '#ababab'}">
                 <i class="el-icon-eleme"></i>
                 <span>首页</span>
@@ -120,19 +122,39 @@
 }
 /* swipe food */
 .swipe {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    align-items: flex-start;
     padding: 0 5px;
-    margin: .5rem 0;
+    margin: .3rem 0;
 }
 .swipe-detail {
-    margin: 0 0 .2rem .2rem;
+    float: left;
+    position: relative;
+    width: 20%;
+    margin-top: .293333rem;
 }
 .swipe-detail a{
     display: flex;
     flex-direction: column;
+}
+.swipe-detail span{
+    color: #666;
+    font-size: .32rem;
+    margin-top: .133rem;
+
+}
+.shoplist-title {
+    display: flex;
+    justify-content: center;
+    font-size: .4rem;
+    color: #000;
+    align-items: center;
+    height: .96rem;
+}
+.shoplist-title:after, .shoplist-title:before{
+    display: block;
+    content: "";
+    width: .533333rem;
+    height: .026667rem;
+    background-color: #999;
 }
 
 .content a{
@@ -140,15 +162,13 @@
     color: #666;
 }
 .noresult{ 
-    font-size: 14px;
+    font-size: 14px;    
 }
 .noresult button {
     padding: .266667rem;
     min-width: 3.2rem;
-    min-width: 32vw;
     border: none;
     border-radius: .053333rem;
-    border-radius: .533333vw;
     background-color: #56d176;
     color: #fff;
     text-align: center;
@@ -162,6 +182,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 1rem;
     font-size: 13px;
     border-top: 1px solid rgba(0,0,0,.1);
     box-shadow: 0 -.5px 1px rgba(0,0,0,.1);
@@ -179,6 +200,11 @@
     color: #0089dc;
 }
 /* common */
+.clearFix {
+    clear: both;
+    display: table;
+    content: "";
+}
 ul {
     list-style: none;
     margin: 0;
