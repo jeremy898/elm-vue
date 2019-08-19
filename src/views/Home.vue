@@ -48,10 +48,10 @@
           <el-button type="success" plain>登录</el-button>
     </section>
     <!-- shopList -->
-    <!-- <div style="height:1200px;margin-bottom: 1rem"></div> -->
+    <div style="height:1200px;margin-bottom: 1rem"></div>
     <!-- nav -->
     <footer style="height:2rem">
-        <div class="footer" style="display: flex;justify-content: space-around;align-items: center;">
+        <div class="footer" style="background: #fff;display: flex;justify-content: space-around;align-items: center;">
             <router-link :to="{ path: '/'}" class="flex-wrap" click="cuurentNav('home')" :style="{color: navName === 'home' ? '#0089dc' : '#ababab'}">
                 <i class="el-icon-eleme"></i>
                 <span>首页</span>
@@ -152,6 +152,7 @@
 .shoplist-title:after, .shoplist-title:before{
     display: block;
     content: "";
+    margin: 0px 5px;
     width: .533333rem;
     height: .026667rem;
     background-color: #999;
