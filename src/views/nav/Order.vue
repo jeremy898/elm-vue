@@ -2,15 +2,15 @@
     <div>
         <section v-if="orderList.length > 1">
             <div>
-                <div>
+                <div class="store">
                     <div><a href="#"><img src="http://iph.href.lu/45x45"></a></div>
-                    <div><label>店铺名称</label><span>2019-05-15 12:12:21</span></div>
-                    <div><label>订单已送达</label></div>
+                    <div class="store-info"><label>店铺名称</label><span class="arrive-time">2019-05-15 12:12:21</span></div>
+                    <div class="arrive"><label>订单已送达</label></div>
                 </div>
-                <div><label>商品名称xx个 等x个商品</label></div>
-                <div>
-                    <el-button type="success" plain>再来一单</el-button>
-                    <el-button type="success" plain>评价得金币</el-button>
+                <div class="goods-price"><label>商品名称xx个 等x个商品</label><span class="price">￥22.00</span></div>
+                <div class="discuss">
+                    <el-button type="primary" plain>再来一单</el-button>
+                    <el-button type="danger" plain>评价得金币</el-button>
                 </div>
             </div>
         </section>
@@ -34,3 +34,37 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .store{
+        display: flex;
+        padding: 10px;
+    }
+    .store-info{
+        margin-left: 10px;
+        text-align: left;
+        line-height: 1.4em;
+    }
+    .arrive-time{
+        display: block;
+    }
+    .arrive{
+        text-align: right;
+        margin-left: 40px;
+        line-height: 2.5em;
+    }
+    .goods-price{
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+        margin: 0 20px 0 55px;
+        padding: 5px 0;
+        text-align: left;
+    }
+    .price{
+        margin-left: 40px;
+    }
+    .discuss{
+        text-align: right;
+        line-height: 2.5em;
+        padding: 0 20px;
+    }
+</style>

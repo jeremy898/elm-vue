@@ -53,6 +53,7 @@
 .user-logo img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 .user-login {
     flex: .8;

@@ -4,19 +4,19 @@
         <!-- nav -->
         <footer style="height:2rem">
             <div class="footer" style="background: #fff;display: flex;justify-content: space-around;align-items: center;">
-                <router-link :to="{ path: '/home'}" class="flex-wrap" click="cuurentNav('home')" :style="{color: navName === 'home' ? '#0089dc' : '#ababab'}">
+                <router-link :to="{ path: '/home'}" class="flex-wrap" @click.native="navName = 'home'" :style="{color: navName === 'home' ? '#0089dc' : '#ababab'}">
                     <i class="el-icon-eleme"></i>
                     <span>首页</span>
                 </router-link>
-                <router-link :to="{ path: '/find'}" class="flex-wrap" click="cuurentNav('find')" :style="{color: navName === 'find' ? '#0089dc' : '#ababab'}">
+                <router-link :to="{ path: '/find'}" class="flex-wrap" @click.native="navName = 'find'" :style="{color: navName === 'find' ? '#0089dc' : '#ababab'}">
                     <i class="el-icon-discover"></i>
                     <span>发现</span>
                 </router-link>
-                <router-link :to="{ path: '/order'}" class="flex-wrap" click="cuurentNav('order')" :style="{color: navName === 'order' ? '#0089dc' : '#ababab'}">
+                <router-link :to="{ path: '/order'}" class="flex-wrap" @click.native="navName = 'order'" :style="{color: navName === 'order' ? '#0089dc' : '#ababab'}">
                     <i class="el-icon-tickets"></i>
                     <span>订单</span>
                 </router-link>
-                <router-link :to="{ path: '/user'}" class="flex-wrap" click="cuurentNav('user')" :style="{color: navName === 'user' ? '#0089dc' : '#ababab'}">
+                <router-link :to="{ path: '/user'}" class="flex-wrap" @click.native="navName = 'user'" :style="{color: navName === 'user' ? '#0089dc' : '#ababab'}">
                     <i class="el-icon-user"></i>
                     <span>我的</span>
                 </router-link>
@@ -66,9 +66,7 @@ export default {
   },
   created() {},
   methods: {
-      cuurentNav(val) {
-        this.navName = val
-      }
+      
   },
   components: {
     Order: Order,
