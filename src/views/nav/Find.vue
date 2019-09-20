@@ -40,7 +40,7 @@
                         <div class="list-info">
                             <p style="font-weight:bold;font-size:1.1em">猪杂汤河粉</p>
                             <p>月售xx份&nbsp;<span>好评率100%</span></p>
-                            <p>￥16&nbsp;<span class="Coupon">满25减5</span></p>
+                            <p>￥16&nbsp;<span class="coupon">满25减5</span></p>
                         </div>
                         <div class="store-name">
                             <i class="el-icon-s-home"></i><span>原味汤粉王</span>
@@ -52,7 +52,7 @@
                         <div class="list-info">
                             <p style="font-weight:bold;font-size:1.1em">猪杂汤河粉</p>
                             <p>月售xx份&nbsp;<span>好评率100%</span></p>
-                            <p>￥16&nbsp;<span class="Coupon">满25减5</span></p>
+                            <p>￥16&nbsp;<span class="coupon">满25减5</span></p>
                         </div>
                         <div class="store-name">
                             <i class="el-icon-s-home"></i><span>原味汤粉王</span>
@@ -64,7 +64,7 @@
                         <div class="list-info">
                             <p style="font-weight:bold;font-size:1.1em">猪杂汤河粉</p>
                             <p>月售xx份&nbsp;<span>好评率100%</span></p>
-                            <p>￥16&nbsp;<span class="Coupon">满25减5</span></p>
+                            <p>￥16&nbsp;<span class="coupon">满25减5</span></p>
                         </div>
                         <div class="store-name">
                             <i class="el-icon-s-home"></i><span>原味汤粉王</span>
@@ -76,7 +76,7 @@
                         <div class="list-info">
                             <p style="font-weight:bold;font-size:1.1em">猪杂汤河粉</p>
                             <p>月售xx份&nbsp;<span>好评率100%</span></p>
-                            <p>￥16&nbsp;<span class="Coupon">满25减5</span></p>
+                            <p>￥16&nbsp;<span class="coupon">满25减5</span></p>
                         </div>
                         <div class="store-name">
                             <i class="el-icon-s-home"></i><span>原味汤粉王</span>
@@ -152,7 +152,7 @@
         margin: 0;
         line-height: 18px;
     }
-    .Coupon{
+    .coupon{
         border: 1px solid #f66d6b;
         color: #f66d6b;
         font-size: 0.8em;
