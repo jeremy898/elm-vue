@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div style="background-color:#f5f5f5">
         <section v-if="orderList.length > 1">
-            <div>
+            <div style="background-color:#fff">
                 <div class="store">
                     <div><a href="#"><img src="http://iph.href.lu/45x45"></a></div>
                     <div class="store-info"><label>店铺名称</label><span class="arrive-time">2019-05-15 12:12:21</span></div>
@@ -19,6 +19,7 @@
             <h4>登录后查看外卖订单</h4>
             <el-button type="success" plain>立即登录</el-button>
         </section>
+        <p style="color:#999;">查看三个月前的外卖订单<span><i class="el-icon-arrow-down"></i></span></p>
     </div>
 </template>
 <style scoped>
